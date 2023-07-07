@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@200;300;400;500;700&display=swap');html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-green: #00FC78;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgba(0, 0, 0, 0.9);
+  background-image: url("https://image.tmdb.org/t/p/original/6JDjZdFckZyMYgtawDwUb6HTwVp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App {
+  text-align: center;
+  max-width: 960px !important;
+}
+
+.outer-background {
+  background-image: linear-gradient(rgba(0,0,0,.85) 15%,rgba(0,0,0,.2) 40%,#000 90%);
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  padding-top: 24px;
+  .logo {
+    width: 140px;
+  }
+
+
+  .input-search {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: transparent;
+    padding: 8px 16px;
+    outline: none;
+    border: 0px;
+    border-bottom: #fff solid 1px;
+  }
+}
+
+.body {
+  .body-img-container {
+    padding-right: 0;
+    .body-img {
+      width: 100%;
+    }
+  }
+
+  .body-content-container {
+    background-color: rgba(0,0,0,.85);
+
+    .title {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 800;
+      margin-top: 28px;
+      font-family: 'Lato', sans-serif !important;
+    }
+    .tagline {
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 300;
+      color: var(--text-green);
+      font-size: 22px;
+    }
+    .tagline-description {
+      margin-top: 8px;
+      margin-bottom: 35px;
+      font-family: 'Lato', sans-serif !important;
+      color: #fff;
+      font-weight: 300;
+    }
+
+    .type {
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 300;
+      color: var(--text-green);
+      font-size: 22px;
+    }
+    .type-description {
+      font-family: 'Lato', sans-serif !important;
+      color: #fff;
+      font-weight: 400;
+    }
+    .detail {
+      font-family: 'Lato', sans-serif !important;
+      color: #fff;
+      font-weight: 400;
+
+      .meta-data {
+        font-family: 'Oswald', sans-serif !important;
+        font-weight: 300;
+        color: var(--text-green);
+        font-size: 26px;
+      }
+    }
+  }
+
+  
+}
+
+.footer {
+
+}
