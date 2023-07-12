@@ -12,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgba(0, 0, 0, 0.9);
-  background-image: url("https://image.tmdb.org/t/p/original/6JDjZdFckZyMYgtawDwUb6HTwVp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -45,6 +44,34 @@ body {
     outline: none;
     border: 0px;
     border-bottom: #fff solid 1px;
+  }
+
+  .search-container {
+    width: 100%;
+    position: relative;
+    .results-container {
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      max-height: 300px;
+      overflow-y: scroll;
+      width: 100%;
+      
+      .searchItem {
+        opacity: 0.7;
+        cursor: pointer;
+        text-align: start;
+        padding: 8px 4px;
+        border-top: 1px solid #fff;
+        color: #fff;
+        &:hover {
+          opacity: 1;
+        }
+        h2 {
+          font-size: 22px;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
@@ -103,9 +130,10 @@ body {
         font-size: 26px;
       }
     }
+
+   
   }
 
-  
 }
 
 .footer {
